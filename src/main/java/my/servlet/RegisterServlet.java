@@ -48,18 +48,7 @@ public class RegisterServlet extends HttpServlet {
             out.println("<head>");
             out.println("<title>Servlet RegisterServlet</title>"
                     + "<link rel=\"stylesheet\" href=\"RegisterCss.css\"/>");
-            out.println("</head>"
-                    + "<style>\n"
-                    + "        html{\n"
-                    + "            font-size: 20px;\n"
-                    + "        }\n"
-                    + "        div{\n"
-                    + "            border-style: solid;\n"
-                    + "            border-width: thin;\n"
-                    + "            border-color: orange;\n"
-                    + "            width: 30%;\n"
-                    + "        }\n"
-                    + "    </style>");
+            out.println("</head>");
             out.println("<body>");
             out.println("<div>\n"
                     + "            <h1>Thông tin đã đăng ký</h1>\n"
