@@ -6,6 +6,7 @@ package my.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import javax.servlet.ServletException;
@@ -37,6 +38,11 @@ public class RegisterServlet extends HttpServlet {
         Part part = request.getPart("hinh");
 
         String realPath = request.getServletContext().getRealPath("uploads");
+        
+        if(!Files.exists(Paths.get(realPath))){
+            Files.createDirectory(Paths.get(realPath));
+        }
+        
         String filename = Paths.get(part.getSubmittedFileName()).getFileName().toString();
         part.write(realPath + "/" + filename);
 
