@@ -6,7 +6,6 @@ package my.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import javax.servlet.ServletException;
@@ -72,9 +71,9 @@ public class RegisterServlet extends HttpServlet {
                     + "                <li>Ảnh đại diện\n <br> <img src=uploads/" + filename + " width=\"200px\"/>"
                     + "            </ul>\n"
                     + "        </div>"
-                            + "<a href=\"register.html\"/>\n" +
-"        <input type=\"submit\" value=\"Tiếp tục đăng ký\">  \n" +
-"        </a>");
+                    + "<a href=\"register.html\"/>\n"
+                    + "        <input type=\"submit\" value=\"Tiếp tục đăng ký\">  \n"
+                    + "        </a>");
             out.println("</body>");
             out.println("</html>");
         }
