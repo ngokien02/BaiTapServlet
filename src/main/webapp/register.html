@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RegisterCss.css"/>
+    </head>
+    <body>
+        <div>
+            <h2>Đăng ký thông tin</h3><hr>
+            <form action="RegisterServlet" method="post" enctype="multipart/form-data">
+                <h4>Họ tên</h4>
+                <input type="text" name="hoTen" required>
+                <h4>Giới tính</h4>
+                <input type="radio" name="gioiTinh" value="Nam" checked="checked"/>Nam
+                <input type="radio" name="gioiTinh" value="Nữ"/>Nữ
+                <h4>Sở thích</h4>
+                <input type="checkbox" name="soThich" value="Mua sắm"/>Mua sắm
+                <input type="checkbox" name="soThich" value="Du lịch"/>Du lịch
+                <input type="checkbox" name="soThich" value="Xem phim"/>Xem phim
+                <h4>Ảnh đại diện</h4>
+                <input type="file" name="hinh" required/>
+                <input type="submit" name="gui" value="Gửi">
+            </form>
+        </div>
+<!--        <div>
+            <h1>Thông tin đã đăng ký</h1>
+            <hr>
+            <ul>
+                <li>Họ tên: <b></b>
+                <li>Giới tính: <b></b> 
+                <li>Sở thích: <b></b>
+                <li>Ảnh đại diện <br> <img src= width="200px"/>
+            </ul>
+        </div>
+        <a href="register.html"/>
+        <input type="submit" value="Tiếp tục đăng ký">  
+        </a>-->
+    </body>
+</html>
